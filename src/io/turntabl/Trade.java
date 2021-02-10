@@ -1,6 +1,6 @@
 package io.turntabl;
 
-public class Trade {
+public abstract class Trade {
 
     private String id;
 
@@ -67,4 +67,6 @@ public class Trade {
                 ", price=" + price +
                 '}';
     }
+
+    public abstract double calcDividend();
 }
